@@ -1,0 +1,8 @@
+C:\Users\r\Documents\Data Sheets\apple\SCSI2SD\SCSI2SD.cydsn\SCSI2SD.cyprj|a51c8712-f001-4045-b1a9-b498b859950a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|865248a2-025c-4f8c-ac23-f8c426b5e55b
+C:\Users\r\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|113195ed-7ce0-448a-8c00-c9e1423ca517
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|137808fe-f6f7-4638-b464-537b9b412e91
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|fe9c029d-1c69-4477-b216-0f326219d9c2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f93aaf49-e642-41a4-b1f1-cbf69d0b4ce5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|fb950674-6341-47dd-bb26-5034e415a342
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|e2120e61-d0e8-4ba2-91ac-46d422e0eed8
