@@ -1,0 +1,454 @@
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"tape.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.scsiTapeCommand,"ax",%progbits
+  20              		.align	2
+  21              		.global	scsiTapeCommand
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	scsiTapeCommand, %function
+  25              	scsiTapeCommand:
+  26              	.LFB64:
+  27              		.file 1 "..\\..\\src\\tape.c"
+   1:..\..\src/tape.c **** //	Copyright (C) 2015 Michael McMaster <michael@codesrc.com>
+   2:..\..\src/tape.c **** //
+   3:..\..\src/tape.c **** //	This file is part of SCSI2SD.
+   4:..\..\src/tape.c **** //
+   5:..\..\src/tape.c **** //	SCSI2SD is free software: you can redistribute it and/or modify
+   6:..\..\src/tape.c **** //	it under the terms of the GNU General Public License as published by
+   7:..\..\src/tape.c **** //	the Free Software Foundation, either version 3 of the License, or
+   8:..\..\src/tape.c **** //	(at your option) any later version.
+   9:..\..\src/tape.c **** //
+  10:..\..\src/tape.c **** //	SCSI2SD is distributed in the hope that it will be useful,
+  11:..\..\src/tape.c **** //	but WITHOUT ANY WARRANTY; without even the implied warranty of
+  12:..\..\src/tape.c **** //	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  13:..\..\src/tape.c **** //	GNU General Public License for more details.
+  14:..\..\src/tape.c **** //
+  15:..\..\src/tape.c **** //	You should have received a copy of the GNU General Public License
+  16:..\..\src/tape.c **** //	along with SCSI2SD.  If not, see <http://www.gnu.org/licenses/>.
+  17:..\..\src/tape.c **** 
+  18:..\..\src/tape.c **** #include "device.h"
+  19:..\..\src/tape.c **** #include "scsi.h"
+  20:..\..\src/tape.c **** #include "config.h"
+  21:..\..\src/tape.c **** #include "tape.h"
+  22:..\..\src/tape.c **** 
+  23:..\..\src/tape.c **** // Handle sequential scsi device commands
+  24:..\..\src/tape.c **** int scsiTapeCommand()
+  25:..\..\src/tape.c **** {
+  28              		.loc 1 25 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 2
+
+
+  33 0000 80B4     		push	{r7}
+  34              		.cfi_def_cfa_offset 4
+  35              		.cfi_offset 7, -4
+  36 0002 00AF     		add	r7, sp, #0
+  37              		.cfi_def_cfa_register 7
+  26:..\..\src/tape.c **** 	// TODO handle tape-specific read/write commands and return 1
+  27:..\..\src/tape.c **** 
+  28:..\..\src/tape.c **** 	return 0;
+  38              		.loc 1 28 0
+  39 0004 0023     		movs	r3, #0
+  29:..\..\src/tape.c **** }...
+  40              		.loc 1 29 0
+  41 0006 1846     		mov	r0, r3
+  42 0008 BD46     		mov	sp, r7
+  43              		.cfi_def_cfa_register 13
+  44              		@ sp needed
+  45 000a 80BC     		pop	{r7}
+  46              		.cfi_restore 7
+  47              		.cfi_def_cfa_offset 0
+  48 000c 7047     		bx	lr
+  49              		.cfi_endproc
+  50              	.LFE64:
+  51              		.size	scsiTapeCommand, .-scsiTapeCommand
+  52 000e 00BF     		.text
+  53              	.Letext0:
+  54              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  55              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  56              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+  57              		.section	.debug_info,"",%progbits
+  58              	.Ldebug_info0:
+  59 0000 C7000000 		.4byte	0xc7
+  60 0004 0400     		.2byte	0x4
+  61 0006 00000000 		.4byte	.Ldebug_abbrev0
+  62 000a 04       		.byte	0x4
+  63 000b 01       		.uleb128 0x1
+  64 000c 68000000 		.4byte	.LASF16
+  65 0010 0C       		.byte	0xc
+  66 0011 57000000 		.4byte	.LASF17
+  67 0015 3E010000 		.4byte	.LASF18
+  68 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  69 001d 00000000 		.4byte	0
+  70 0021 00000000 		.4byte	.Ldebug_line0
+  71 0025 02       		.uleb128 0x2
+  72 0026 01       		.byte	0x1
+  73 0027 06       		.byte	0x6
+  74 0028 26010000 		.4byte	.LASF0
+  75 002c 02       		.uleb128 0x2
+  76 002d 01       		.byte	0x1
+  77 002e 08       		.byte	0x8
+  78 002f F6000000 		.4byte	.LASF1
+  79 0033 02       		.uleb128 0x2
+  80 0034 02       		.byte	0x2
+  81 0035 05       		.byte	0x5
+  82 0036 93010000 		.4byte	.LASF2
+  83 003a 02       		.uleb128 0x2
+  84 003b 02       		.byte	0x2
+  85 003c 07       		.byte	0x7
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 3
+
+
+  86 003d 0E000000 		.4byte	.LASF3
+  87 0041 03       		.uleb128 0x3
+  88 0042 83010000 		.4byte	.LASF9
+  89 0046 02       		.byte	0x2
+  90 0047 3F       		.byte	0x3f
+  91 0048 4C000000 		.4byte	0x4c
+  92 004c 02       		.uleb128 0x2
+  93 004d 04       		.byte	0x4
+  94 004e 05       		.byte	0x5
+  95 004f 09010000 		.4byte	.LASF4
+  96 0053 02       		.uleb128 0x2
+  97 0054 04       		.byte	0x4
+  98 0055 07       		.byte	0x7
+  99 0056 2E000000 		.4byte	.LASF5
+ 100 005a 02       		.uleb128 0x2
+ 101 005b 08       		.byte	0x8
+ 102 005c 05       		.byte	0x5
+ 103 005d 00000000 		.4byte	.LASF6
+ 104 0061 02       		.uleb128 0x2
+ 105 0062 08       		.byte	0x8
+ 106 0063 07       		.byte	0x7
+ 107 0064 40000000 		.4byte	.LASF7
+ 108 0068 04       		.uleb128 0x4
+ 109 0069 04       		.byte	0x4
+ 110 006a 05       		.byte	0x5
+ 111 006b 696E7400 		.ascii	"int\000"
+ 112 006f 02       		.uleb128 0x2
+ 113 0070 04       		.byte	0x4
+ 114 0071 07       		.byte	0x7
+ 115 0072 21000000 		.4byte	.LASF8
+ 116 0076 03       		.uleb128 0x3
+ 117 0077 9D010000 		.4byte	.LASF10
+ 118 007b 03       		.byte	0x3
+ 119 007c 2C       		.byte	0x2c
+ 120 007d 41000000 		.4byte	0x41
+ 121 0081 02       		.uleb128 0x2
+ 122 0082 04       		.byte	0x4
+ 123 0083 04       		.byte	0x4
+ 124 0084 8D010000 		.4byte	.LASF11
+ 125 0088 02       		.uleb128 0x2
+ 126 0089 08       		.byte	0x8
+ 127 008a 04       		.byte	0x4
+ 128 008b 12010000 		.4byte	.LASF12
+ 129 008f 02       		.uleb128 0x2
+ 130 0090 01       		.byte	0x1
+ 131 0091 08       		.byte	0x8
+ 132 0092 04010000 		.4byte	.LASF13
+ 133 0096 02       		.uleb128 0x2
+ 134 0097 08       		.byte	0x8
+ 135 0098 04       		.byte	0x4
+ 136 0099 32010000 		.4byte	.LASF14
+ 137 009d 02       		.uleb128 0x2
+ 138 009e 04       		.byte	0x4
+ 139 009f 07       		.byte	0x7
+ 140 00a0 B5010000 		.4byte	.LASF15
+ 141 00a4 05       		.uleb128 0x5
+ 142 00a5 A5010000 		.4byte	.LASF19
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 4
+
+
+ 143 00a9 01       		.byte	0x1
+ 144 00aa 18       		.byte	0x18
+ 145 00ab 68000000 		.4byte	0x68
+ 146 00af 00000000 		.4byte	.LFB64
+ 147 00b3 0E000000 		.4byte	.LFE64-.LFB64
+ 148 00b7 01       		.uleb128 0x1
+ 149 00b8 9C       		.byte	0x9c
+ 150 00b9 06       		.uleb128 0x6
+ 151 00ba 19010000 		.4byte	.LASF20
+ 152 00be 04       		.byte	0x4
+ 153 00bf 1207     		.2byte	0x712
+ 154 00c1 C5000000 		.4byte	0xc5
+ 155 00c5 07       		.uleb128 0x7
+ 156 00c6 76000000 		.4byte	0x76
+ 157 00ca 00       		.byte	0
+ 158              		.section	.debug_abbrev,"",%progbits
+ 159              	.Ldebug_abbrev0:
+ 160 0000 01       		.uleb128 0x1
+ 161 0001 11       		.uleb128 0x11
+ 162 0002 01       		.byte	0x1
+ 163 0003 25       		.uleb128 0x25
+ 164 0004 0E       		.uleb128 0xe
+ 165 0005 13       		.uleb128 0x13
+ 166 0006 0B       		.uleb128 0xb
+ 167 0007 03       		.uleb128 0x3
+ 168 0008 0E       		.uleb128 0xe
+ 169 0009 1B       		.uleb128 0x1b
+ 170 000a 0E       		.uleb128 0xe
+ 171 000b 55       		.uleb128 0x55
+ 172 000c 17       		.uleb128 0x17
+ 173 000d 11       		.uleb128 0x11
+ 174 000e 01       		.uleb128 0x1
+ 175 000f 10       		.uleb128 0x10
+ 176 0010 17       		.uleb128 0x17
+ 177 0011 00       		.byte	0
+ 178 0012 00       		.byte	0
+ 179 0013 02       		.uleb128 0x2
+ 180 0014 24       		.uleb128 0x24
+ 181 0015 00       		.byte	0
+ 182 0016 0B       		.uleb128 0xb
+ 183 0017 0B       		.uleb128 0xb
+ 184 0018 3E       		.uleb128 0x3e
+ 185 0019 0B       		.uleb128 0xb
+ 186 001a 03       		.uleb128 0x3
+ 187 001b 0E       		.uleb128 0xe
+ 188 001c 00       		.byte	0
+ 189 001d 00       		.byte	0
+ 190 001e 03       		.uleb128 0x3
+ 191 001f 16       		.uleb128 0x16
+ 192 0020 00       		.byte	0
+ 193 0021 03       		.uleb128 0x3
+ 194 0022 0E       		.uleb128 0xe
+ 195 0023 3A       		.uleb128 0x3a
+ 196 0024 0B       		.uleb128 0xb
+ 197 0025 3B       		.uleb128 0x3b
+ 198 0026 0B       		.uleb128 0xb
+ 199 0027 49       		.uleb128 0x49
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 5
+
+
+ 200 0028 13       		.uleb128 0x13
+ 201 0029 00       		.byte	0
+ 202 002a 00       		.byte	0
+ 203 002b 04       		.uleb128 0x4
+ 204 002c 24       		.uleb128 0x24
+ 205 002d 00       		.byte	0
+ 206 002e 0B       		.uleb128 0xb
+ 207 002f 0B       		.uleb128 0xb
+ 208 0030 3E       		.uleb128 0x3e
+ 209 0031 0B       		.uleb128 0xb
+ 210 0032 03       		.uleb128 0x3
+ 211 0033 08       		.uleb128 0x8
+ 212 0034 00       		.byte	0
+ 213 0035 00       		.byte	0
+ 214 0036 05       		.uleb128 0x5
+ 215 0037 2E       		.uleb128 0x2e
+ 216 0038 00       		.byte	0
+ 217 0039 3F       		.uleb128 0x3f
+ 218 003a 19       		.uleb128 0x19
+ 219 003b 03       		.uleb128 0x3
+ 220 003c 0E       		.uleb128 0xe
+ 221 003d 3A       		.uleb128 0x3a
+ 222 003e 0B       		.uleb128 0xb
+ 223 003f 3B       		.uleb128 0x3b
+ 224 0040 0B       		.uleb128 0xb
+ 225 0041 27       		.uleb128 0x27
+ 226 0042 19       		.uleb128 0x19
+ 227 0043 49       		.uleb128 0x49
+ 228 0044 13       		.uleb128 0x13
+ 229 0045 11       		.uleb128 0x11
+ 230 0046 01       		.uleb128 0x1
+ 231 0047 12       		.uleb128 0x12
+ 232 0048 06       		.uleb128 0x6
+ 233 0049 40       		.uleb128 0x40
+ 234 004a 18       		.uleb128 0x18
+ 235 004b 9742     		.uleb128 0x2117
+ 236 004d 19       		.uleb128 0x19
+ 237 004e 00       		.byte	0
+ 238 004f 00       		.byte	0
+ 239 0050 06       		.uleb128 0x6
+ 240 0051 34       		.uleb128 0x34
+ 241 0052 00       		.byte	0
+ 242 0053 03       		.uleb128 0x3
+ 243 0054 0E       		.uleb128 0xe
+ 244 0055 3A       		.uleb128 0x3a
+ 245 0056 0B       		.uleb128 0xb
+ 246 0057 3B       		.uleb128 0x3b
+ 247 0058 05       		.uleb128 0x5
+ 248 0059 49       		.uleb128 0x49
+ 249 005a 13       		.uleb128 0x13
+ 250 005b 3F       		.uleb128 0x3f
+ 251 005c 19       		.uleb128 0x19
+ 252 005d 3C       		.uleb128 0x3c
+ 253 005e 19       		.uleb128 0x19
+ 254 005f 00       		.byte	0
+ 255 0060 00       		.byte	0
+ 256 0061 07       		.uleb128 0x7
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 6
+
+
+ 257 0062 35       		.uleb128 0x35
+ 258 0063 00       		.byte	0
+ 259 0064 49       		.uleb128 0x49
+ 260 0065 13       		.uleb128 0x13
+ 261 0066 00       		.byte	0
+ 262 0067 00       		.byte	0
+ 263 0068 00       		.byte	0
+ 264              		.section	.debug_aranges,"",%progbits
+ 265 0000 1C000000 		.4byte	0x1c
+ 266 0004 0200     		.2byte	0x2
+ 267 0006 00000000 		.4byte	.Ldebug_info0
+ 268 000a 04       		.byte	0x4
+ 269 000b 00       		.byte	0
+ 270 000c 0000     		.2byte	0
+ 271 000e 0000     		.2byte	0
+ 272 0010 00000000 		.4byte	.LFB64
+ 273 0014 0E000000 		.4byte	.LFE64-.LFB64
+ 274 0018 00000000 		.4byte	0
+ 275 001c 00000000 		.4byte	0
+ 276              		.section	.debug_ranges,"",%progbits
+ 277              	.Ldebug_ranges0:
+ 278 0000 00000000 		.4byte	.LFB64
+ 279 0004 0E000000 		.4byte	.LFE64
+ 280 0008 00000000 		.4byte	0
+ 281 000c 00000000 		.4byte	0
+ 282              		.section	.debug_line,"",%progbits
+ 283              	.Ldebug_line0:
+ 284 0000 60010000 		.section	.debug_str,"MS",%progbits,1
+ 284      02004901 
+ 284      00000201 
+ 284      FB0E0D00 
+ 284      01010101 
+ 285              	.LASF6:
+ 286 0000 6C6F6E67 		.ascii	"long long int\000"
+ 286      206C6F6E 
+ 286      6720696E 
+ 286      7400
+ 287              	.LASF3:
+ 288 000e 73686F72 		.ascii	"short unsigned int\000"
+ 288      7420756E 
+ 288      7369676E 
+ 288      65642069 
+ 288      6E7400
+ 289              	.LASF8:
+ 290 0021 756E7369 		.ascii	"unsigned int\000"
+ 290      676E6564 
+ 290      20696E74 
+ 290      00
+ 291              	.LASF5:
+ 292 002e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 292      20756E73 
+ 292      69676E65 
+ 292      6420696E 
+ 292      7400
+ 293              	.LASF7:
+ 294 0040 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 294      206C6F6E 
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 7
+
+
+ 294      6720756E 
+ 294      7369676E 
+ 294      65642069 
+ 295              	.LASF17:
+ 296 0057 2E2E5C2E 		.ascii	"..\\..\\src\\tape.c\000"
+ 296      2E5C7372 
+ 296      635C7461 
+ 296      70652E63 
+ 296      00
+ 297              	.LASF16:
+ 298 0068 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 298      43313120 
+ 298      352E342E 
+ 298      31203230 
+ 298      31363036 
+ 299 009b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 299      20726576 
+ 299      6973696F 
+ 299      6E203233 
+ 299      37373135 
+ 300 00ce 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 300      66756E63 
+ 300      74696F6E 
+ 300      2D736563 
+ 300      74696F6E 
+ 301              	.LASF1:
+ 302 00f6 756E7369 		.ascii	"unsigned char\000"
+ 302      676E6564 
+ 302      20636861 
+ 302      7200
+ 303              	.LASF13:
+ 304 0104 63686172 		.ascii	"char\000"
+ 304      00
+ 305              	.LASF4:
+ 306 0109 6C6F6E67 		.ascii	"long int\000"
+ 306      20696E74 
+ 306      00
+ 307              	.LASF12:
+ 308 0112 646F7562 		.ascii	"double\000"
+ 308      6C6500
+ 309              	.LASF20:
+ 310 0119 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 310      52784275 
+ 310      66666572 
+ 310      00
+ 311              	.LASF0:
+ 312 0126 7369676E 		.ascii	"signed char\000"
+ 312      65642063 
+ 312      68617200 
+ 313              	.LASF14:
+ 314 0132 6C6F6E67 		.ascii	"long double\000"
+ 314      20646F75 
+ 314      626C6500 
+ 315              	.LASF18:
+ 316 013e 433A5C55 		.ascii	"C:\\Users\\r\\Documents\\Data Sheets\\apple\\SCSI2S"
+ 316      73657273 
+ 316      5C725C44 
+ARM GAS  C:\Users\r\AppData\Local\Temp\ccp8vXPe.s 			page 8
+
+
+ 316      6F63756D 
+ 316      656E7473 
+ 317 016b 445C5343 		.ascii	"D\\SCSI2SD_Copy_01.cydsn\000"
+ 317      53493253 
+ 317      445F436F 
+ 317      70795F30 
+ 317      312E6379 
+ 318              	.LASF9:
+ 319 0183 5F5F696E 		.ascii	"__int32_t\000"
+ 319      7433325F 
+ 319      7400
+ 320              	.LASF11:
+ 321 018d 666C6F61 		.ascii	"float\000"
+ 321      7400
+ 322              	.LASF2:
+ 323 0193 73686F72 		.ascii	"short int\000"
+ 323      7420696E 
+ 323      7400
+ 324              	.LASF10:
+ 325 019d 696E7433 		.ascii	"int32_t\000"
+ 325      325F7400 
+ 326              	.LASF19:
+ 327 01a5 73637369 		.ascii	"scsiTapeCommand\000"
+ 327      54617065 
+ 327      436F6D6D 
+ 327      616E6400 
+ 328              	.LASF15:
+ 329 01b5 73697A65 		.ascii	"sizetype\000"
+ 329      74797065 
+ 329      00
+ 330              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
