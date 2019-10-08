@@ -26,8 +26,8 @@
 #include "disk.h"
 #include "trace.h"
 
-#include "../../include/scsi2sd.h"
-#include "../../include/hidpacket.h"
+#include "../src/include/scsi2sd.h"
+#include "../src/include/hidpacket.h"
 
 #include <string.h>
 
