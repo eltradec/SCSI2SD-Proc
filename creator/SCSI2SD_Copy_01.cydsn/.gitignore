@@ -1,0 +1,12 @@
+codegentemp/
+Generated_Source/
+CortexM3/
+Export/
+*.log
+SCSI2SD_Copy_01.cycdx
+SCSI2SD_Copy_01.cyfit
+SCSI2SD_Copy_01.rpt
+SCSI2SD_Copy_01.svd
+SCSI2SD_Copy_01_timing.html
+SCSI2SD_Copy_01-000.cywrk.*
+SCSI2SD_Copy_01.cyprj.*
