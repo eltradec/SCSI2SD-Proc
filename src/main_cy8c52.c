@@ -1,4 +1,5 @@
 //	Copyright (C) 2014 Michael McMaster <michael@codesrc.com>
+//	Modified 2018 (or timestamp yymmdd) Robert Matyschok <rm@eltradec.eu), modifications commented with "RM" prefix
 //
 //	This file is part of SCSI2SD.
 //
@@ -21,14 +22,14 @@
 #include "config.h"
 #include "disk.h"
 #include "led.h"
-// #include "SOUND_ISR.h"
+// RM #include "SOUND_ISR.h"
 #include "time.h"
 #include "trace.h"
-// #include "VDAC8_1.h"
+// RM #include "VDAC8_1.h"
 
 const char* Notice = "Copyright (C) 2015-2018 Michael McMaster <michael@codesrc.com>";
     
-// void soundInit()
+// void soundInit(); // RM
 // {  
     // Opamp_1_Start(); // RM Opamp not present in CY8C52
 //    VDAC8_1_Start(); // RM start VDAC
